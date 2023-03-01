@@ -4079,17 +4079,14 @@ var tablecaballos = function tablecaballos() {
 	}; //fin de ocultar tablas
 
 	var d = document,
-	    tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container-caballos__tab')),
-	    tableTap = d.querySelectorAll('.lorem');
+	    tabs = Array.prototype.slice.apply(d.querySelectorAll('.tabs-container-caballos__tab'));
 
 	var _loop = function _loop(index) {
 		tabs[index].addEventListener('click', function (e) {
-			var i = tabs.indexOf(e.target);
 			var x = tabs[index];
 			hideTable();
 			var table = document.querySelector('.' + x.id);
 			table.style.display = 'block';
-			table.classList.add('is-active');
 		});
 	};
 
@@ -4263,10 +4260,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 		(0, _tabs2.default)();
 	} else if (document.body.classList.contains('ReglasDeportes')) {
 		(0, _accordion2.default)();
+		(0, _dropdown.initAcc)();
 	} else if (document.body.classList.contains('bonus')) {
 		(0, _tnsSlider.carouselPromotions)();
-	} else if (document.body.classList.contains('ReglasDeportes')) {
-		(0, _dropdown.initAcc)();
 	} else if (document.body.classList.contains('caballos')) {
 		(0, _tablecaballos2.default)();
 	}

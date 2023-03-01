@@ -16,10 +16,9 @@ import tablecaballos from './components/tablecaballos';
 		tabs();
 	} else if (document.body.classList.contains('ReglasDeportes')) {
 		accordion();
+		initAcc();
 	} else if (document.body.classList.contains('bonus')) {
 		carouselPromotions();
-	} else if (document.body.classList.contains('ReglasDeportes')) {
-		initAcc();
 	} else if (document.body.classList.contains('caballos')) {
 		tablecaballos();
 	}

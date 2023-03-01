@@ -1,37 +1,46 @@
-.lorem{
+.lorem {
 	display: none;
 }
-.lorem:first-of-type{
+
+.lorem:first-of-type {
 	display: block;
 }
-.ed-container-caballos{
+
+.ed-container-caballos {
 	overflow: auto;
 }
-.tabs-container-caballos{
+
+.tabs-container-caballos {
 	width: 100%;
 	position: relative;
 	margin: 0;
-	table{
+
+	table {
 		width: 100%;
 		min-width: 1000px;
 		border: 1px solid white;
 		padding: 1rem;
 		border-collapse: collapse;
-		thead{
+
+		thead {
 			color: #ff9c00;
 		}
-		td{
+
+		td {
 			vertical-align: text-top;
 		}
-		tr, td{
+
+		tr,
+		td {
 			padding: 1rem;
 			border: 1px solid white;
 		}
-		tr:nth-child(even){
+
+		tr:nth-child(even) {
 			background-color: #171717;
 		}
 	}
-	
+
 	&__tabs {
 		list-style: none;
 		margin: 0;
@@ -41,20 +50,20 @@
 
 	&__tab {
 		width: 20%;
-		min-width: 100px;
+		min-width: 180px;
 		line-height: 2;
 		padding: 0 1em;
 		margin-right: 1px;
 		border-bottom: none;
 		border-radius: 4px 4px 0 0;
 		position: relative;
+		font-weight: 800;
 		top: 1px;
 		cursor: pointer;
+		border: 1px solid var(--color-orange);
 
-		&.is-active {
-			background-color: #ff9c00;
-			position: relative;
-			z-index: 2;
+		&:hover {
+			background-color: var(--color-orange);
 		}
 	}
 
