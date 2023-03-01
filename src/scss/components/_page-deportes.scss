@@ -1,6 +1,10 @@
 .container-deportes{
     width: 100%;
     height: 800px;
+    margin-top: -4rem;
+    @media (min-width: 968px) {
+        margin-top: -2rem;
+    }
     &__iframe{
         width: 100%;
         height: 800px;
